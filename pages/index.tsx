@@ -1,9 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head"
+import Image from "next/image"
+import { Inter } from "next/font/google"
+import styles from "@/styles/Home.module.css"
+import AuthDisplay from "@/components/AuthDisplay"
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] })
 
 export default function Home() {
   return (
@@ -20,15 +21,16 @@ export default function Home() {
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.tsx</code>
           </p>
+          <AuthDisplay />
           <div>
             <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
+              By{" "}
               <Image
-                src="/vercel.svg"
+                src="/assets/vercel.svg"
                 alt="Vercel Logo"
                 className={styles.vercelLogo}
                 width={100}
@@ -42,7 +44,7 @@ export default function Home() {
         <div className={styles.center}>
           <Image
             className={styles.logo}
-            src="/next.svg"
+            src="/assets/next.svg"
             alt="Next.js Logo"
             width={180}
             height={37}
@@ -50,7 +52,7 @@ export default function Home() {
           />
           <div className={styles.thirteen}>
             <Image
-              src="/thirteen.svg"
+              src="/assets/thirteen.svg"
               alt="13"
               width={40}
               height={31}
